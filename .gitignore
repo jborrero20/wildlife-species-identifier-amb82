@@ -1,0 +1,31 @@
+# Python
+  __pycache__/
+  *.py[cod]
+  .env
+  venv/
+  .venv/
+
+  # Model binaries (use Git LFS for large files)
+  *.tflite
+  *.h5
+  *.pb
+  model/speciesnet_saved_model/
+
+  # Arduino build output
+  *.elf
+  *.bin
+  *.hex
+  firmware/.pio/
+  firmware/build/
+
+  # Detection data
+  *.csv
+  *.log
+  DETECTIONS/
+
+  # OS / Editor
+  .DS_Store
+  Thumbs.db
+  .vscode/
+  .idea/
+  
