@@ -1,0 +1,11 @@
+# Host-side Python tools — Wildlife Species Identifier (AMB82-Mini)
+  tensorflow>=2.13.0
+  tflite-runtime>=2.13.0
+  Pillow>=10.0.0
+  numpy>=1.24.0
+  pyserial>=3.5
+  pandas>=2.0.0
+  matplotlib>=3.7.0
+  requests>=2.31.0
+  pyyaml>=6.0
+  
