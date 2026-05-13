@@ -1,0 +1,32 @@
+# Wildlife Species Identifier — AMB82-Mini Configuration
+
+  inference:
+    confidence_threshold: 0.65   # Minimum confidence score (0.0–1.0)
+    top_k: 3                     # Number of top predictions per frame
+    capture_interval_ms: 5000    # Milliseconds between capture cycles
+    image_width: 320
+    image_height: 320
+    model_file: "speciesnet_int8.tflite"
+
+  logging:
+    enable_sd: true              # Log detections to SD card CSV
+    enable_serial: true          # Print detections to Serial monitor
+    log_images: false            # Save JPEG frames alongside detections
+    sd_cs_pin: 10                # SD card chip-select GPIO pin
+
+  wifi:
+    enabled: false               # Set true to enable remote sync
+    ssid: "YOUR_WIFI_SSID"
+    password: "YOUR_WIFI_PASSWORD"
+    endpoint: "https://your-conservation-api.example.com/api/detections"
+    sync_interval_min: 30        # Minutes between Wi-Fi sync attempts
+
+  gps:
+    enabled: false               # Set true if NEO-6M GPS is attached
+    uart_port: 2                 # Hardware UART port number
+    baud: 9600
+
+  power:
+    deep_sleep_between_captures: false  # Enable for ultra-low-power mode
+    led_feedback: true                  # Blink LED on detection
+  
